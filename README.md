@@ -11,4 +11,4 @@ https://github.com/CarlosAugg/Roadmap-Activities/blob/main/Roadmap%20codes/Singl
 
 https://roadmap.sh/projects/basic-html-website
 
-https://github.com/CarlosAugg/Roadmap-Activities/blob/main/Basic%20HTML%20Website/index.html
+https://github.com/CarlosAugg/Roadmap-Activities/tree/main/Basic%20HTML%20Website
