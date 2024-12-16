@@ -1,0 +1,319 @@
+/* Resetando margens e preenchimento */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Ou a fonte que você preferir */
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Remover bordas de imagens */
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+nav img {
+  height: 32px;
+}
+
+nav p {
+  margin-left: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  right: -1rem;
+  color: gray;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1 / span 2;
+  border: 2px solid #000000;
+}
+
+.projects h2 {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+}
+
+.projects li {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.projects li:last-child {
+  border-bottom: none;
+}
+
+.projects a {
+  text-decoration: none;
+  color: black;
+}
+
+.work-experience {
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+.work-experience h2 {
+  margin-bottom: 10px;
+}
+
+.opensource {
+  grid-row: 2 / 2;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+.opensource h2 {
+  margin-bottom: 10px;
+}
+
+.education {
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+.education h2 {
+  margin-bottom: 10px;
+}
+
+.education span {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.education ul {
+  list-style-type: disc;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.reviews {
+  margin: 20px;
+}
+.teachers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.teacher {
+  border: 2px solid #000000;
+  border-radius: 50px;
+  padding: 20px;
+  width: 24%;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 3rem
+}
+
+/* Estilos gerais (para telas maiores) */
+
+body {
+  font-size: 16px;
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav img {
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  nav p {
+    margin-left: 0;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+    padding-top: 1rem;
+    font-size: larger;
+  }
+
+  nav ul li:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    right: -0.7rem;
+    color: gray;
+  }
+
+  header {
+    height: 0rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem; /* Reduz o tamanho do texto */
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    /* Empilha as colunas */
+  }
+
+  .projects,
+  .work-experience,
+  .opensource,
+  .education {
+    grid-row: auto; /* Remove o span */
+    width: 100%;
+    /* Adapta ao tamanho da tela */
+  }
+
+.roadmaps {
+padding: 1rem;
+}
+
+  .work-experience,
+  .opensource,
+  .education {
+    padding: 1rem;
+  }
+
+  .projects {
+    text-align: center;
+  }
+
+  .projects li {
+    background-color: rgb(149, 173, 250);
+  }
+
+  .projects li:first-child {
+    border-top: 2px black solid;
+  }
+
+  .work-experience h2 {
+    text-align: center;
+  }
+
+  .work-experience {
+    background-color: rgb(
+      149,
+      173,
+      250
+    ); /* Fundo azul para o restante da seção */
+    border: 2px solid black; /* Mantém a borda da seção */
+    padding: 0; /* Remove espaçamento interno */
+  }
+
+  .work-experience h2 {
+    background-color: white; /* Remove o fundo azul do título */
+    margin: 0; /* Remove margens do título */
+    padding: 10px 0; /* Espaçamento interno apenas acima e abaixo do texto */
+    border-bottom: 3.5px solid black; /* Borda inferior indo até a/* Centraliza o texto */
+  }
+
+  .opensource {
+    background-color: rgb(149, 173, 250);
+  }
+
+  .opensource h2 {
+    text-align: center;
+  }
+
+  .education h2 {
+    text-align: center;
+  }
+
+  .teachers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher {
+    width: 90%; /* Faz os blocos ocuparem quase toda a largura */
+  }
+}
