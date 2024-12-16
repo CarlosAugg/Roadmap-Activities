@@ -19,3 +19,9 @@ https://github.com/CarlosAugg/Roadmap-Activities/tree/main/Basic%20HTML%20Websit
 https://roadmap.sh/projects/portfolio-website
 
 https://github.com/CarlosAugg/Roadmap-Activities/tree/main/Personal%20Portfolio
+
+**Changelog Component**
+
+https://roadmap.sh/projects/changelog-component
+
+https://github.com/CarlosAugg/Roadmap-Activities/tree/main/Changelog%20Component
